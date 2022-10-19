@@ -1,0 +1,12 @@
+Requirements:
+
+Download the .fig file above and import it into Figma. (On the files/drafts page, click on Import file and import the downloaded .fig file.)
+Recreate the mockup using HTML/CSS.
+Extract the image.
+Find the font-family, colours and other settings (e.g. drop shadow) using the mockup.
+Use a content wrapper to restrict the content to a certain width. There is no layout grid as the mockup is very simple but you can use guides to determine the outermost range of the content.
+There are no components with hover variants so you may extrapolate from the colours used in the design to come up with your own link hover colours if you wish.
+Put your CSS and image files in subdirectories.
+
+
+Zip up the HTML, CSS, and image files and submit via Blackboard. Name your ZIP using the format: HTML-Lab6-JohnDoe.zip. This is an individual lab.

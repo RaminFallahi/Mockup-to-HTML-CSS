@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Poppins:wght@500&family=Yellowtail&display=swap');
+
+/************************************************************
+ * TABLE OF CONTENTS 
+ * =================
+ * 1. DEFAULT STYLES
+ * 2. GENERAL USE CLASSES
+ * 3. HEADER
+ * 4. MAIN
+ */
+
+ /* ======================================================================================================== */ 
+ /* ============================================= DEFULT STYLE ============================================= */ 
+ html {
+  box-sizing:border-box; /* add to aid styling */
+  font:300 1em "Open Sans",serif; /* 1em = 16px */
+}
+*, *::before, *::after {
+  box-sizing:inherit; /* add to aid styling */
+}
+body {
+  margin:0; /* get rid of default gap around page perimeter */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight:900;
+}
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration:none;
+  color: blueviolet;
+}
+
+ /* ======================================================================================================== */ 
+ /* ============================================= HEADER-CONTENT =========================================== */ 
+ #logo-and-site-name {
+  font-size:2em; /* 2em = 32px (32px / 16px = 2) */
+  flex:5 0 0;
+  margin:1.0625em 3em ; /* adjust gap above and below */
+  text-shadow:0px 2px 3px #b2b2b2;
+}
+#header {
+  display:flex;
+  align-items:center;
+}
+.menu li {
+  font-size:1.5em; /* 24px */
+  font-family: 'Poppins', sans-serif;
+  display:inline-block;
+  margin-right:1.9375em; /* because 24px is the font size, 46.5px / 24px = 1.9375 */
+}
+
+ /* ======================================================================================================== */ 
+
+
+ /* .content-wrapper { */
+  /* max-width:1260px; */
+  /* margin:0 auto; */
+  /* centers container horizontally in page */
+/* } */
+
+
+ /* ============================================= MAIN-CONTENT ============================================= */ 
+ #main {
+  text-align: center;
+}
+.hero-text {
+  padding: 12em;
+  /* for seting the background image under header*/
+  background:url("../images/macarons.jpg") center center no-repeat;
+  /* center cent is for making it in center and no repeat for avoid tailing up */
+}
+ .hero-text h1 {
+  font-size:6em;
+  color:#fff;
+  text-shadow:1px 2px 6px #797979;/* 1px = x 1px = y , 3 = transparensy */
+  padding:1.28125em 0.115em;
+  margin:0; /* remove default margin */
+}
+a.button, button {
+  padding: 1em 3em; /* setting a paading for making the button size change and bigger than the the text inside of it. */
+  background-color: #ffffff;
+  border-radius:36px;
+  border: 5px solid #AD00FF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight:500;
+} 
+.button-wrapper {
+  max-width: 700;
+  max-height: 192px;
+}
+
+ /* ======================================================================================================== */ 
+ /* ============================================= FOOTER-CONTENT ============================================= */ 
+.footer-menu li {
+  font-family: 'Poppins', sans-serif;
+  font-size:1.5em; /* 24px */
+  display:inline-block;
+  margin-left:1.9375em;
+}
+.copyright {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  /* position absolut + left moves the copyright to right  BUT i dont know why its not working for bottom*/
+  position: absolute;
+  left: 86px;
+}
